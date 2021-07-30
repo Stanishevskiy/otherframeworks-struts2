@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <include file="login.xml" />
+
+    <package name="default" namespace="/tutorials" extends="struts-default">
+        <action name="getNamespaceTutorial" class="io.tolstjak.action.TutorialActionNamespace">
+            <result name="success">/namespace-demo.jsp</result>
+        </action>
+
+        <action name="getTagsTutorial" class="io.tolstjak.action.TutorialActionTags">
+            <result name="success">/tags-demo.jsp</result>
+        </action>
+
+        <action name="getInputsGetTutorial" class="io.tolstjak.action.TutorialActionInputGetParameters">
+            <result name="success">/inputs-get-demo.jsp</result>
+        </action>
+
+        <action name="getInputsPostTutorial" class="io.tolstjak.action.TutorialActionInputPostParameters">
+            <result name="success">/inputs-post-demo2.jsp</result>
+        </action>
+    </package>
+
+</struts>
+
+
